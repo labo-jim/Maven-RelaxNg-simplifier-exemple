@@ -1,0 +1,72 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>labo.jim</groupId>
+	<artifactId>test-relaxng-simplification</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	
+	
+	<description>Maven plugin to run Generate-XSL</description>
+    <url>https://github.com/jimetevenard/Maven-XSL-Generator</url>
+    <developers>
+        <developer>
+            <id>jimetevenard</id>
+            <name>Jim Etevenard</name>
+            <email>jetevenard@oxiane.com</email>
+            <url>http://www.github.com/jimetevenard</url>
+            <organization>OXiane</organization>
+            <organizationUrl>http://www.oxiane.com</organizationUrl>
+            <timezone>Europe/Paris</timezone>
+        </developer>
+    </developers>
+
+    <contributors>
+	
+	</contributors>
+
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
+    <scm>
+        <connection>scm:git:https://github.com/jimetevenard/Maven-XSL-Generator</connection>
+        <developerConnection>scm:git:https://github.com/jimetevenard/Maven-XSL-Generator</developerConnection>
+        <url>scm:git:https://github.com/jimetevenard/Maven-XSL-Generator</url>
+        <tag>HEAD</tag>
+    </scm>
+    
+    <!--  FIN -->
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>com.jimetevenard.xml</groupId>
+				<artifactId>relaxng-schema-simplifier</artifactId>
+				<version>0.0.1-SNAPSHOT</version>
+				
+				<executions>
+					<execution>
+						<goals>
+							<goal>simplify</goal>
+						</goals>
+						<phase>generate-sources</phase>
+						
+						<configuration>
+							<schemas>
+								<schema>
+									<sourcePath>src/main/grammars/test.rng</sourcePath>
+								</schema>
+								<schema>
+									<sourcePath>src/main/grammars/test.rng</sourcePath>
+									<targetPath>target/grammars/mon-test.srng</targetPath>
+								</schema>
+							</schemas>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+</project>
