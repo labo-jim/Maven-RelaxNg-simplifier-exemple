@@ -6,38 +6,8 @@
 	<version>0.0.1-SNAPSHOT</version>
 	
 	
-	<description>Maven plugin to run Generate-XSL</description>
-    <url>https://github.com/jimetevenard/Maven-XSL-Generator</url>
-    <developers>
-        <developer>
-            <id>jimetevenard</id>
-            <name>Jim Etevenard</name>
-            <email>jetevenard@oxiane.com</email>
-            <url>http://www.github.com/jimetevenard</url>
-            <organization>OXiane</organization>
-            <organizationUrl>http://www.oxiane.com</organizationUrl>
-            <timezone>Europe/Paris</timezone>
-        </developer>
-    </developers>
-
-    <contributors>
 	
-	</contributors>
-
-    <licenses>
-        <license>
-            <name>Apache License, Version 2.0</name>
-            <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
-        </license>
-    </licenses>
-    <scm>
-        <connection>scm:git:https://github.com/jimetevenard/Maven-XSL-Generator</connection>
-        <developerConnection>scm:git:https://github.com/jimetevenard/Maven-XSL-Generator</developerConnection>
-        <url>scm:git:https://github.com/jimetevenard/Maven-XSL-Generator</url>
-        <tag>HEAD</tag>
-    </scm>
-    
-    <!--  FIN -->
+   
 
 	<build>
 		<plugins>
@@ -69,4 +39,5 @@
 			</plugin>
 		</plugins>
 	</build>
+	
 </project>
